@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8f2e8;
+  color: #333;
+}
+ 
+/* navbar */
+.navbar {
+  background-color: white;
+  border-bottom: 2px solid #4682b4;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+ 
+.site-logo {
+  font-size: 22px;
+  color: #333;
+}
+ 
+.site-logo span {
+  color: #28772c;
+}
+ 
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+ 
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+ 
+.nav-links a:hover {
+  color: #4682b4;
+}
+ 
+/* sections */
+.section {
+  padding: 50px 30px;
+  max-width: 1100px;
+}
+ 
+h1 {
+  font-size: 35px;
+  margin-bottom: 15px;
+  color: #222;
+}
+ 
+h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #222;
+}
+ 
+p {
+  margin-bottom: 10px;
+}
+ 
+/* buttons */
+.btn {
+  background-color: #4682b4;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+ 
+.btn:hover {
+  background-color: #4169e1;
+}
+ 
+.btn-outline {
+  background-color: white;
+  color: #4682b4;
+  border: 2px solid #4682b4;
+}
+ 
+.btn-outline:hover {
+  background-color: #e0f6ff;
+}
+ 
+.small-btn {
+  padding: 6px 14px;
+  font-size: 13px;
+  margin-top: 0;
+}
+ 
+.cards-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+ 
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 18px;
+  width: 220px;
+  background: rgb(255, 255, 255);
+}
+ 
+.card:hover {
+  border-color: #4682b4;
+}
+ 
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #222;
+}
+ 
+.card h4 {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #222;
+}
+ 
+.card p {
+  font-size: 14px;
+  color: gray;
+  margin: 0;
+}
+ 
+/* forms */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin-top: 15px;
+}
+ 
+.form-box label {
+  font-size: 14px;
+  font-weight: bold;
+}
+ 
+.form-box input,
+.form-box textarea,
+.form-box select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+ 
+.form-box input:focus,
+.form-box textarea:focus,
+.form-box select:focus {
+  border-color: #4682b4;
+  outline: none;
+}
+ 
+.form-box textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+ 
+/* upload box */
+.upload-box {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: gray;
+  background: #f9f9f9;
+}
+ 
+.upload-box:hover {
+  border-color: #4682b4;
+}
+ 
+/* footer */
+.footer {
+  background-color: #f3f4f6;
+  border-top: 1px solid #ddd;
+  padding: 20px 30px;
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+}
+ 
+/* top bar */
+.top-bar {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  top: 0;
+}
+ 
+.top-bar button {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+ 
+.top-bar button:hover {
+  border-color: #4682b4;
+  color: #4682b4;
+}
+ 
+.top-bar span {
+  font-weight: 600;
+  font-size: 16px;
+}
+ 
+.blue {
+  color: #add8e6;
+}
+ 
+/* tabs */
+.tab-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+ 
+.tab {
+  background: rgb(135, 206, 235);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 7px 16px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+ 
+.tab:hover {
+  border-color: #00008b;
+}
+ 
+.tab.active {
+  background: #000080;
+  color: white;
+  border-color: #4682b4;
+}
+ 
+.tab-content {
+  display: none;
+}
+ 
+.tab-content.active {
+  display: block;
+}
+ 
+/* listing card bottom row */
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+ 
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #191970;
+}
+ 
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: gray;
+  font-family: Arial, sans-serif;
+}

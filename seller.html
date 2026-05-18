@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudyNest - Seller Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <div class="top-bar">
+    <button onclick="window.location.href='index.html'">&larr; Back</button>
+    <span>Seller Sign Up</span>
+  </div>
+ 
+  <div class="section">
+    <h2>Turn your notes into income.</h2>
+    <p>Fill in the form below to list your notes on StudyNest. Once submitted your listing will show up in the marketplace.</p>
+    <div class="form-box">
+      <label>Your name</label>
+      <input type="text" placeholder="XXX" />
+      <label>Email</label>
+      <input type="email" placeholder="xxx@gmail.com" />
+      <label>Notes title</label>
+      <input type="text" placeholder="e.g. xxx Notes" />
+      <label>Subject</label>
+      <select>
+        <option value="">Select a subject...</option>
+        <optgroup label="Language Arts">
+          <option>English</option>
+          <option>Spanish</option>
+          <option>Mandarin</option>
+        </optgroup>
+        <optgroup label="Sciences">
+          <option>Chemistry</option>
+          <option>Physics</option>
+          <option>Biology</option>
+          <option>Environmental Science</option>
+        </optgroup>
+        <optgroup label="Social Studies">
+          <option>World History</option>
+          <option>Economics</option>
+        </optgroup>
+        <optgroup label="PE">
+          <option>Physical Education</option>
+        </optgroup>
+      </select>
+      <label>Description</label>
+      <textarea placeholder="Describe whats in your notes, topics covered, number of pages etc."></textarea>
+      <label>Upload PDF</label>
+      <div class="upload-box">
+        <p>📄 Click to upload your PDF</p>
+        <p style="font-size: 0.8rem; color: gray;">PDF only</p>
+      </div>
+      <button class="btn">Submit Listing</button>
+    </div>
+  </div>
+ 
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudyNest - PE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <div class="top-bar">
+    <button onclick="window.location.href='index.html'">&larr; Back</button>
+    <span>PE</span>
+  </div>
+ 
+  <div class="section">
+    <div class="tab-row">
+      <button class="tab active" onclick="showTab(this, 'pe-general')">General PE</button>
+    </div>
+ 
+    <div id="pe-general" class="tab-content active">
+      <div class="cards-row">
+        <div class="card">
+          <h4>Mr Wruck&#39;s PE Notes</h4>
+          <div class="card-bottom"><span class="price">$2.49</span><button class="btn small-btn">Preview & Buy</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <script>
+    function showTab(btn, id) {
+      var parent = btn.parentElement.parentElement;
+      parent.querySelectorAll('.tab').forEach(function(t) { t.classList.remove('active'); });
+      parent.querySelectorAll('.tab-content').forEach(function(c) { c.classList.remove('active'); });
+      btn.classList.add('active');
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+ 
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudyNest - Social Studies</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <div class="top-bar">
+    <button onclick="window.location.href='index.html'">&larr; Back</button>
+    <span>Social Studies</span>
+  </div>
+ 
+  <div class="section">
+    <div class="tab-row">
+      <button class="tab active" onclick="showTab(this, 'ss-world')">World History</button>
+      <button class="tab" onclick="showTab(this, 'ss-econ')">Economics</button>
+    </div>
+ 
+    <div id="ss-world" class="tab-content active">
+      <div class="cards-row">
+        <div class="card">
+          <h4>Mr. Chiu&#39;s World History Notes</h4>
+          <div class="card-bottom"><span class="price">$4.99</span><button class="btn small-btn">Preview & Buy</button></div>
+        </div>
+      </div>
+    </div>
+ 
+    <div id="ss-econ" class="tab-content">
+      <div class="cards-row">
+        <div class="card">
+          <h4>Mr Chiu&#39;s AP Micro Economics Notes</h4>
+          <div class="card-bottom"><span class="price">$4.49</span><button class="btn small-btn">Preview & Buy</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <script>
+    function showTab(btn, id) {
+      var parent = btn.parentElement.parentElement;
+      parent.querySelectorAll('.tab').forEach(function(t) { t.classList.remove('active'); });
+      parent.querySelectorAll('.tab-content').forEach(function(c) { c.classList.remove('active'); });
+      btn.classList.add('active');
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+ 
+</body>
+</html>
